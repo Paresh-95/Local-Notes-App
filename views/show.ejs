@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Notes App</title>
+  </head>
+  <body>
+     <div class="main w-full min-h-screen bg-zinc-900 text-white">
+      <div class="main w-full min-h-screen bg-zinc-900">
+        
+        <a class="text-blue-500 inline-block mb-10 p-10 " href="/">Go Back to Home</a>
+         <h1 class="text-4xl tracking-tighter pl-12"><%= filename %></h1>
+         <p class="text-xl m-10 mt-7 border p-2 h-[500px] mt-2 font-light"><%=filedata %></p>
+         <a class="text-white inline-block text-2xl border border-white px-2 bg-red-600 rounded-lg m-12 mr-0 " href="/file/delete/<%= filename %>">Delete</a>
+         <a class="text-white inline-block text-2xl border border-white px-2 bg-green-600 rounded-lg m-12 mr-0 " href="/edit/<%= filename %>">Edit</a>
+
+         
+     </div>
+  </body>
+</html>
